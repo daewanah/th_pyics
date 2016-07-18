@@ -27,7 +27,7 @@ while True:
     continue
   else:
     new_list = new_stuff.split(",")
-    index = raw_input("Add this at a certain spot? Press enter for the end of the list, " "or give me a number. Currently {} items in the list.".format( len(shopping_list)))
+    index = raw_input("Add this at a certain spot? Press enter for the end of the list, " "or give me a number. Currently {} items in the list. ".format( len(shopping_list)))
     if index:
       spot = int(index) - 1
       for item in new_list:
