@@ -17,3 +17,9 @@ def most_classes(dict):
             max_count = len(dict[teacher])
             most_class = teacher
     return most_class
+
+def num_teacher(dicts):
+    t_teacher = 0
+    for key in dicts.keys():
+        t_teacher += 1
+    return t_teacher
