@@ -9,12 +9,12 @@
 #
 # Your code goes below here.
 
-def most_classes(dict):
+def most_classes(dicts):
     most_class = "" # holds the name of teach with most class
     max_count = 0 # max counter for classes
-    for teacher in dict:
+    for teacher in dicts:
         if len(dict[teacher]) > max_count:
-            max_count = len(dict[teacher])
+            max_count = len(dicts[teacher])
             most_class = teacher
     return most_class
 
@@ -30,3 +30,9 @@ def stats(dicts):
         a_list = [key, len(value)]
         my_list.append(a_list)
     return my_list
+
+def courses(dicts):
+    courseList = []
+    for classes in dicts.values():
+        courseList.extend(classes)
+    return courseList
