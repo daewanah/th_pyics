@@ -18,8 +18,15 @@ def most_classes(dict):
             most_class = teacher
     return most_class
 
-def num_teacher(dicts):
+def num_teachers(dicts):
     t_teacher = 0
     for key in dicts.keys():
         t_teacher += 1
     return t_teacher
+
+def stats(dicts):
+    my_list = []
+    for key, value in dicts.items():
+        a_list = [key, len(value)]
+        my_list.append(a_list)
+    return my_list
