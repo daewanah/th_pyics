@@ -29,20 +29,20 @@ def get_move(player):
     # If player's x is 2, remove DOWN
     return MOVES
 
-    while True:
-        print("Welcome to the dungeon!")
-        print("You're currently in the room {}.") # fill with the player position
-        print("You can move {}.") # fill in with available moves
-        print("Enter 'QUIT' to quit.")
+while True:
+    print("Welcome to the dungeon!")
+    print("You're currently in the room {}.") # fill with the player position
+    print("You can move {}.") # fill in with available moves
+    print("Enter 'QUIT' to quit.")
 
-        move = raw_input("> ")
-        move = move.upper()
+    move = raw_input("> ")
+    move = move.upper()
 
-        if move == 'QUIT':
-            break
+    if move == 'QUIT':
+        break
 
-        # If it's a good move, change the player's position
-        # If it's a bad move, don't change anything
-        # If the new player position is the door, they win!
-        # If the new player position is the monster, they lose!
-        # Otherwise, continue.
+    # If it's a good move, change the player's position
+    # If it's a bad move, don't change anything
+    # If the new player position is the door, they win!
+    # If the new player position is the monster, they lose!
+    # Otherwise, continue.
