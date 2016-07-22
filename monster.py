@@ -1,4 +1,8 @@
 class Monster:
-    hit_point = 1
+    hit_points = 1
     color = 'yellow'
     weapon = 'sword'
+    sound = 'roar'
+
+    def battlecry(self):
+        return self.sound.upper()
